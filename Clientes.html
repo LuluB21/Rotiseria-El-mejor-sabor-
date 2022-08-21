@@ -5,6 +5,37 @@
         <title>El Mejor Sabor - Registro de Clientes</title>
     </head>
     <body>
-        
+         <h2>Registra tus datos</h2>
+	<form>
+		Cuil: <br>
+		<input type= "number" name= "cuilCliente"><br><br>  
+		Nombre: <br>
+		<input type= "text" name = "nombre"><br><br>  
+		Apellido: <br>
+		<input type= "text" name = "apellido"><br><br> 
+		Teléfono de contacto: <br>
+		<input type= "number" name= "tContacto"><br><br> 
+		<h4>Datos de domicilio</h4>
+		Calle: <br>
+		<input type= "text" name = "calle"><br><br>  
+		Numero: <br>
+		<input type= "number" name= "numeroDom"><br><br>  
+		Barrio: <br>
+		<input type= "text" name = "barrio"><br><br>  
+		Localidad: <br>
+		<input type= "text" name = "localidad"><br><br>  
+		Departamento: <br>
+		<input type= "text" name = "depto"><br><br>  
+		<label for="zona">Zona:</label>
+		<select id="zona" name="zona">
+  		<option value="norte">Norte</option>
+  		<option value="sur">Sur</option>
+  		<option value="este">Este</option>
+  		<option value="oeste">Oeste</option>
+		</select><br><br>
+		Observación:<br> 
+		<textarea name="observacion"></textarea>
+		<br><br><input type= "submit" value="Guardar">		 
+	</form>
     </body>
 </html> 
