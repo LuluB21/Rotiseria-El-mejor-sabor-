@@ -5,196 +5,232 @@
         <title>El Mejor Sabor - Menus</title>
     </head>
     <body>
-        <!--ENCABEZADO-->
-        <header style="background-color:white;">
-            <nav>
+        <header id = "Encabezado">
+            <nav id = "Navegacion">
                 <a href="Rotiseria.html">Inicio</a>
                 <a href="Contacto.html">Contacto</a>
-                <a href="IniciarSesion.html">Iniciar Sesion</a>
+                <a href="IniciarSesion.html">
+                    <img src="iconoIniciarSesion1.png" alt="Iniciar Sesion">
+                </a>
             </nav>
             <h1 style="text-align:center;">ROTISERIA "EL MEJOR SABOR"</h1>
+            <br>
+            <h2 style="text-align:center;">MENÚ DISPONIBLE</h2>
         </header>
 
-        <h2 style="text-align:center;">MENÚ DISPONIBLE</h2>
+        <section id = "SelectorOpciones">
+            <form>
+                <label for="TipoMenu">Seleccione:</label>
+                <select id="TipoMenu" name="tipoMenu">
+                    <option value="Entrada">Entrada</option>
+                    <option value="PlatoPrincipal">Plato Principal</option>
+                    <option value="Postre">Postre</option>
+                </select>
 
-        <form>
-            <label for="TipoMenu">Seleccione:</label>
-            <select id="TipoMenu" name="tipoMenu">
-                <option value="Entrada">Entrada</option>
-                <option value="PlatoPrincipal">Plato Principal</option>
-                <option value="Postre">Postre</option>
-            </select>
-            <br><br>
-            <label for="TipoPlato">Seleccione:</label>
-            <select id="TipoPlato" name="tipoPlato">
-                <option value="Normal">Normal</option>
-                <option value="vegetariano">vegetariano</option>
-                <option value="Celíaco">Celíaco</option>
-                <option value="Diabético">Diabético</option>
-            </select>
-            <br><br>
-            <!--SI SELECCIONA ENTRADA-->
-            <!--SI SELECCIONA PLATO PRINCIPAL-->
-            <label for="TiposComidas">Seleccione:</label>
-            <select id="TiposComidas" name="TiposComidas">
-                <option value="Hamburguesas">Hamburguesas</option>
-                <option value="Pizzas">Pizzas</option>
-                <option value="Al Plato">Al Plato</option>
-            </select>
-            <!--SI SELECCIONA POSTRE-->
-            <br><br><br>
-            <H3>COMENTARIO: PLATO PRINCIPAL NORMAL</H3>
-            <fieldset>
-                <legend> <b>HAMBURGUESAS</b> </legend>
-                <br>
-                <fieldset>
-                    <legend><b>Hamburguesa Clásica</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Hamburguesa Especial</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Hamburguesa Americana</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Hamburguesa Con Rúcula</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
+                <br><br>
 
-            </fieldset>
-            <br><br><br>
-            <fieldset>
-                <legend> <b>PIZZAS</b> </legend>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Especial</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Argentina</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Napolitana</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Calabresa</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
+                <label for="TipoComida">Seleccione:</label>
+                <select id="TipoComida" name="tipoComida">
+                    <option value="Normal">Normal</option>
+                    <option value="vegetariano">Vegetariano</option>
+                    <option value="Celíaco">Celíaco</option>
+                    <option value="Diabético">Diabético</option>
+                </select>
+            </form>
+        </section>
+        <section id = "PlatosNormales">
+            <form>
 
-            </fieldset>
-            <br><br><br>
-            <fieldset>
-                <legend> <b>AL PLATO</b> </legend>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Especial</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Argentina</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Napolitana</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Calabresa</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
+                <br><br>
+                <!--SI SELECCIONA ENTRADA-->
+                <label for="Entrada">Seleccione Entrada:</label>
+                <select id="Entrada" name="Comida">
+                    <option value="Empanadas">Empanadas</option>
+                    <option value="Ensaladas">Ensaladas</option>
+                    <option value="Nachos">Nachos</option>
+                </select>
+
+                <br><br>
+
+                <!--SI SELECCIONA PLATO PRINCIPAL-->
+                <label for="Plato">Seleccione Plato Principal:</label>
+                <select id="Plato" name="Comida">
+                    <option value="Hamburguesas">Hamburguesas</option>
+                    <option value="Pizzas">Pizzas</option>
+                    <option value="Al Plato">Al Plato</option>
+                    <option value="Carnes">Carnes</option>
+                    <option value="Sopas">Sopas</option>
+                </select>
+
+                <br><br>
+
+                <!--SI SELECCIONA POSTRE-->
+                <label for="Postres">Seleccione Postre:</label>
+                <select id="Postre" name="Postre">
+                    <option value="Helados">Helados</option>
+                    <option value="Gelatinas">Gelatinas</option>
+                    <option value="Pasteles">Pasteles</option>
+                </select>
+            </form>
+        </section>
+
+        <section id = "Menus">
+            <form>
                 <br><br><br>
-            <fieldset>
-                <legend> <b>AL PLATO</b> </legend>
-                <br>
+                <H3>COMENTARIO: PLATO PRINCIPAL NORMAL</H3>
                 <fieldset>
-                    <legend><b>Pizza Especial</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Argentina</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Napolitana</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><b>Pizza Calabresa</b></legend>
-                    <!--IMAGEN-->
-                    <p>Descripcion</p>
-                    <p align="right"><i>$350</i></p>
-                    <input type="submit" value="Agregar Al Carrito">
-                </fieldset>
-                <br>
+                    <legend> <b>HAMBURGUESAS</b> </legend>
+                    <br>
+                    <fieldset>
+                        <legend><b>Hamburguesa Clásica</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Hamburguesa Especial</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Hamburguesa Americana</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Hamburguesa Con Rúcula</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
 
-            </fieldset>
-        </form>
+                </fieldset>
+                <br><br><br>
+                <fieldset>
+                    <legend> <b>PIZZAS</b> </legend>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Especial</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Argentina</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Napolitana</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Calabresa</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
 
+                </fieldset>
+                <br><br><br>
+                <fieldset>
+                    <legend> <b>AL PLATO</b> </legend>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Especial</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Argentina</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Napolitana</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Calabresa</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <br><br><br>
+                <fieldset>
+                    <legend> <b>AL PLATO</b> </legend>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Especial</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Argentina</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Napolitana</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Pizza Calabresa</b></legend>
+                        <!--IMAGEN-->
+                        <p>Descripcion</p>
+                        <p align="right"><i>$350</i></p>
+                        <input type="submit" value="Agregar Al Carrito">
+                    </fieldset>
+                    <br>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <!--FALTAN MENUES-->
         
         <!--PIE DE PAGINA-->
         <footer>
