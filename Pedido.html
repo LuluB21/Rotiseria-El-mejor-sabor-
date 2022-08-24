@@ -5,6 +5,36 @@
         <title>El Mejor Sabor -Pedidos </title>
     </head>
     <body>
+         <!--ENCABEZADO-->
+         <header>
+            <nav>
+                <a href="Rotiseria.html">Inicio</a>
+                <a href="Menues.html">Menu</a>
+                <a href="IniciarSesion.html">Iniciar Sesion</a>
+            </nav>
+	
+	<h2>Información del pedido:</h2>
+    <form>
+        <h4>Seleccione el tipo de entrega:</h4>
+        <select id="tipo de entrega" name="tipoEntrega">
+            <option value="aDomicilio">Envio a domicilio</option>
+            <option value="retiraLocal">Retiro en el local</option>
+        </select>
+        <h4>Seleccione un rango horario para la entrega:</h4>
+        <label for="horaInicio">Hora de inicio:</label>
+        <input type="time" id="horaInicio" name="horaInicio"><br><br>
+
+        <label for="horaFin">Hora de finalizacion</label>
+        <input type="time" id="horaFin" name="horaFin"><br><br>
+        
+        <input type= "submit" value="Confirmar pedido">
+    </form>
+
+     <!--PIE DE PAGINA-->
+     <footer>
+        <br>
+        <p style="text-align:center;">Derechos Reservados @2022</p>
+    </footer>
 
     </body>
 </html>
