@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rotiseria "El mejor Sabor"</title>
+    </head>
+    <body>
+        <header id = "Encabezado">
+            <nav id = "Navegacion">
+                <a href="Rotiseria.html">Inicio</a>
+                <a href="Menues.html">Menu</a>
+                <a href="Contacto.html">Contacto</a>
+                <a href="IniciarSesion.html">
+                    <img src="iconoIniciarSesion1.png" alt="Iniciar Sesion">
+                </a>
+            </nav>
+			<h2>Menú de Administrador</h2>
+        </header>
+
+
+        <div class=“General">
+            <nav class=“abm_Opciones”> 
+                <form>
+                    <input type="submit" value="AÑADIR PLATO">
+                    <br><br>
+                    <input type="submit" value="MODIFICAR PLATO">
+                    <br><br>
+                    <input type="submit" value="ELIMINAR PLATO">
+                </form>
+            </nav>
+            <br><br>
+            <!--La aplicación deberá permitir registrar los diferentes menús o platos, estos pueden ser: 
+            entrada, plato principal y postre. Por lo tanto, de los platos se necesita conocer: código, 
+            nombre, descripción, tipo de plato, precio, si está vigente y si el plato o menú es normal, 
+            vegetariano, para celíaco o para diabético.-->
+            <section class=“ABM”>
+                <!--AÑADIR PLATO-->
+                <form>
+                    <fieldset>
+                        <legend> Añadir Plato </legend>
+                            <label for="codigo">Ingresa el codigo:</label><br>
+                            <input type="text" id="codigo" name="codigo" value="Codigo:"><br><br>
+
+                            <label for="nombre">Ingresa el nombre del plato:</label><br>
+                            <input type="text" id="nombre" name="nombre" value="Nombre:"><br><br>
+
+                            <label for="descripcion">Descripcion:</label><br>
+                            <textarea name="descripcion" rows="10" cols="30"></textarea><br><br>
+
+                            <label for="TipoMenu">Seleccione:</label>
+                            <select id="TipoMenu" name="tipoMenu">
+                                <option value="Entrada">Entrada</option>
+                                <option value="PlatoPrincipal">Plato Principal</option>
+                                <option value="Postre">Postre</option>
+                            </select><br><br>
+
+                            <input type="checkbox" name="vigente" value=".">Si está vigente
+                            <br><br>
+
+                            <label for="TipoComida">Seleccione:</label>
+                            <select id="TipoComida" name="tipoComida">
+                                <option value="Normal">Normal</option>
+                                <option value="vegetariano">Vegetariano</option>
+                                <option value="Celíaco">Celíaco</option>
+                                <option value="Diabético">Diabético</option>
+                            </select><br><br><br>
+
+                            <input type="submit" value="Añadir Plato">
+                            <button type="reset">Reiniciar</button>
+                    </fieldset>
+                </form><br><br>
+
+                <!--MODIFICAR PLATO-->
+                <form>
+                    <fieldset>
+                        <legend> Modificar Plato </legend>
+                        <label for="buscador">BUSCADOR:</label><br>
+                        <input type="text" id="buscador" name="buscador" value="Ingresa el nombre del plato:">
+                        <input type="submit" value="Buscar"> 
+                        <br><br><br>
+
+                        <select id="BusquedaPlatos" name="BusquedaPlatos" size="10" multiple> 
+                            <option value="Pizza">Pizza ...</option>
+                            <option value="...">Agregar todos los platos</option>
+                            <!--RESPECTO DE LA SELECCIÓN QUE SE HAGA, APARECERAN LOS DATOS A MODIFICAR-->
+                        </select>
+
+                        <!--VALORES A MODIFICAR-->
+                        <label for="codigo">Codigo:</label><br>
+                            <input type="text" id="codigo" name="codigo" value="Codigo:"><br><br>
+
+                            <label for="nombre">Nombre del plato:</label><br>
+                            <input type="text" id="nombre" name="nombre" value="Nombre:"><br><br>
+
+                            <label for="descripcion">Descripcion:</label><br>
+                            <textarea name="descripcion" rows="10" cols="30"></textarea><br><br>
+
+                            <label for="TipoMenu">Seleccione:</label>
+                            <select id="TipoMenu" name="tipoMenu">
+                                <option value="Entrada">Entrada</option>
+                                <option value="PlatoPrincipal">Plato Principal</option>
+                                <option value="Postre">Postre</option>
+                            </select><br><br>
+
+                            <input type="checkbox" name="vigente" value=".">Si está vigente
+                            <br><br>
+
+                            <label for="TipoComida">Seleccione:</label>
+                            <select id="TipoComida" name="tipoComida">
+                                <option value="Normal">Normal</option>
+                                <option value="vegetariano">Vegetariano</option>
+                                <option value="Celíaco">Celíaco</option>
+                                <option value="Diabético">Diabético</option>
+                            </select><br><br><br>
+
+                            <input type="submit" value="Modificar Plato">
+                            <button type="reset">Reiniciar</button>
+                    </fieldset>
+                </form><br><br>
+
+                <!--ELIMINAR PLATO-->
+                <form>
+                    <fieldset>
+                        <legend> Eliminar Plato </legend>
+                        <label for="buscador">BUSCADOR:</label><br>
+                        <input type="text" id="buscador" name="buscador" value="Ingresa el nombre del plato:">
+                        <input type="submit" value="Buscar"> 
+                        <br><br><br>
+
+                        <select id="BusquedaPlatos" name="BusquedaPlatos" size="10" multiple> 
+                            <option value="Pizza">Pizza ...</option>
+                            <option value="...">Agregar todos los platos</option>
+                        </select><br><br>
+
+                        <input type="submit" value="Eliminar Plato">
+                        <button type="reset">Cancelar</button>
+
+                    </fieldset>
+                </form>
+
+            </section>
+        </div>
+
+        <footer>
+            <br>
+            <p style="text-align:center;">Derechos Reservados @2022</p>
+        </footer>
+    </body>
+</html>
+
