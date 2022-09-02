@@ -71,7 +71,7 @@
     top:10;
     bottom: 0;
     z-index:40;
-    background-color: aqua;
+    background-color: transparent;
     margin: 50;
     border: solid transparent;
 }
