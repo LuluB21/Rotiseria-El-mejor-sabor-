@@ -28,69 +28,124 @@
                 </a>
             </li>
         </ul>
+        <title>El Mejor Sabor - Registro de Cadetes</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="Cadete.css"/>
+    </head>
+    <body>
+		
+        <header id = "Encabezado">
+            <nav id = "Navegacion">
+                <a href="Rotiseria.html">Inicio</a>
+                <a href="Menues.html">Menu</a>
+                <a href="Contacto.html">Contacto</a>
+                <a href="IniciarSesion.html">
+                    <img src="iconoIniciarSesion1.png" alt="Iniciar Sesion">
+                </a>
+            </nav>
+			<h2>Registro de cadetes</h2><br> 
+        </header>
 
+
+	<div class="container">
 	<form>
-		<fieldset>
-	   		<legend> Datos personales:</legend>
-			CUIL: <br>
-			<input type= "number" name= "cuilEmpleado"><br><br>  Nombre: <br>
-			<input type= "text" name = "nombre"><br><br>  Apellido: <br>
-			<input type= "text" name = "apellido"><br><br> Fecha de nacimiento: <br>
-			<input type="date" name = "fechaN"><br><br> 
-		</fieldset>
-		<br>
-		<br>
-		<fieldset>
-	   		<legend> Telefono:</legend>
-			Fijo: <br>
-			<input type= "number" name= "tFijo"><br><br>  
-			Celular: <br>
-			<input type= "number" name= "tCelular"><br><br> 	
-		</fieldset>
-		<br>
-		<br>
-		<fieldset>
-	   		<legend> Domicilio:</legend>
-			Calle: <br>
-			<input type= "text" name = "calle"><br><br>  
-			Numero: <br>
-			<input type= "number" name= "numeroDom"><br><br>  
-			Localidad: <br>
-			<input type= "text" name = "localidad"><br><br>  
-			Departamento: <br>
-			<input type= "text" name = "depto"><br><br>  
-  		</fieldset>
-		<br>
-		<br>
-		<fieldset>
-	   		<legend> Datos laborales:</legend>
-			Fecha de ingreso en la rotiseria: <br>
-			<input type="date" name = "fechaIngreso"><br><br> 
-			Vigencia carnet: <br>
-			<input type="date" name = "vigenciaCarnet"><br><br> 
-			Patente del vehiculo: <br> 
-			<input type= "text" name = "patente"><br><br>  
-			Zona de entregas asignada: <br> 
-			<select id="zona" name="zona">
-  			<option value="norte">Norte</option>
-  			<option value="sur">Sur</option>
-  			<option value="este">Este</option>
-  			<option value="oeste">Oeste</option>
-			</select>
-			</fieldset>
-			<br>
-			<div style="text-align:center;">
-			<input type= "submit" value="Guardar">
+		<h4>Datos personales</h4>
+
+		<div class="form-group">
+			<label for="cuilEmpleado">Cuil</label>
+			<input type="number" class="form-control" id="cuilEmpleado" placeholder="Ingrese cuil">
+		</div>
+		
+		<div class="form-group">
+			<label for="nombre">Nombre</label>
+			<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+		</div>
+		
+		
+		<div class="form-group">
+			<label for="apellido">Apellido</label>
+			<input type="text" class="form-control" id="apellido" placeholder="Apellido">
+		</div>	
+			
+
+		<div class="form-group">
+				<label for="fechaN">Fecha de nacimiento</label>
+				<input type="date" class="form-control" id="fechaN" placeholder="Fecha de nacimiento">
+		</div>
+	
+			<div class="form-group">
+				<label for="tFijo">Teléfono Fijo</label>
+				<input type="number" class="form-control" id="tFijo" placeholder="Ingrese su número de teléfono">
 			</div>
+
+			<div class="form-group">
+				<label for="tCelular">Celular</label>
+				<input type="number" class="form-control" id="tCelular" placeholder="Ingrese su número de teléfono">
+			</div>
+			<br> 
+			<h4>Datos de domicilio</h4>
+
+  		
+			<div class="form-group">
+				<label for="calle">Calle</label>
+				<input type="text" class="form-control" id="calle" placeholder="Calle">
+			</div>
+			
+			
+			<div class="form-group">
+				<label for="numeroDom">Número</label>
+				<input type="number" class="form-control" id="numeroDom" placeholder="Número de domicilio">
+			  </div>
+
+			<div class="form-group">
+				<label for="localidad">Localidad</label>
+				<input type="text" class="form-control" id="localidad" placeholder="Localidad">
+			</div>
+	 
+			
+			<div class="form-group">
+				<label for="depto">Departamento</label>
+				<input type="text" class="form-control" id="depto" placeholder="Departamento">
+			  </div>
+			<br> 
+			<h4>Datos laborales</h4>
+
+			<div class="form-group">
+				<label for="fechaIngreso">Fecha de ingreso en la rotiseria</label>
+				<input type="date" class="form-control" id="fechaIngreso" placeholder="Fecha de ingreso en la rotiseria">
+		    </div>
+	
+			<div class="form-group">
+				<label for="vigenciaCarnet">Vigencia carnet</label>
+				<input type="date" class="form-control" id="vigenciaCarnet" placeholder="Vigencia carnet">
+		    </div>  
+
+			<div class="form-group">
+				<label for="patente">Patente del vehiculo</label>
+				<input type="text" class="form-control" id="patente" placeholder="Patente del vehiculo">
+			</div>
+			
+			<div class="form-group">
+				<label for="zona">Zona de entregas asignada</label>
+				<select class="form-control" id="zona">
+					<option value="norte">Norte</option>
+					<option value="sur">Sur</option>
+					<option value="este">Este</option>
+					<option value="oeste">Oeste</option>
+				</select>
+			</div>
+			<br>
+			
+			<button type="button" class="btn btn-outline-dark">Guardar</button>	
+			
 			</form>
+		</div>
 	   		<!--PIE DE PAGINA-->
-       		<footer>
+       			<footer>
            		<br>
             		<p style="text-align:center;">Derechos Reservados @2022</p>
-        	</footer>
-			<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-		
+        		</footer>
+					
     </body>
 </html> 
 
