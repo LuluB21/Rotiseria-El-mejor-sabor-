@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/js/bootstrap.min.js"></script>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>Rotiseria "El mejor Sabor"</title>
     </head>
@@ -29,135 +29,158 @@
             </li>
         </ul>
 
+        <a href="#añade">Añadir Plato</a>
+        <a href="#modifica">Modificar Plato</a>
+        <a href="#elimina">Eliminar Plato</a>
 
-        <div class=“General">
-            <nav class=“abm_Opciones”> 
-                <form>
-                    <input type="submit" value="AÑADIR PLATO">
-                    <br><br>
-                    <input type="submit" value="MODIFICAR PLATO">
-                    <br><br>
-                    <input type="submit" value="ELIMINAR PLATO">
-                </form>
-            </nav>
-            <br><br>
+        <div class="container"> 
+           
             <!--La aplicación deberá permitir registrar los diferentes menús o platos, estos pueden ser: 
             entrada, plato principal y postre. Por lo tanto, de los platos se necesita conocer: código, 
             nombre, descripción, tipo de plato, precio, si está vigente y si el plato o menú es normal, 
             vegetariano, para celíaco o para diabético.-->
-            <section class=“ABM”>
+            
                 <!--AÑADIR PLATO-->
+                <hr>
+                <h2 id="añade">Añadir Plato</h2>
                 <form>
-                    <fieldset>
-                        <legend> Añadir Plato </legend>
-                            <label for="codigo">Ingresa el codigo:</label><br>
-                            <input type="text" id="codigo" name="codigo" value="Codigo:"><br><br>
+                    
+                            <div class="form-group">
+                                <label for="codigoPlato">Código</label>
+                                <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
+                            </div>
 
-                            <label for="nombre">Ingresa el nombre del plato:</label><br>
-                            <input type="text" id="nombre" name="nombre" value="Nombre:"><br><br>
+                            <div class="form-group">
+                                <label for="nombrePlato">Nombre del plato</label>
+                                <input type="text" class="form-control" id="nombrePlato" placeholder="Nombre del plato">
+                            </div>
 
-                            <label for="descripcion">Descripcion:</label><br>
-                            <textarea name="descripcion" rows="10" cols="30"></textarea><br><br>
+                            <div class="form-group">
+                                <label for="descripcion">Descripción</label>
+                                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                            </div>
 
-                            <label for="TipoMenu">Seleccione:</label>
-                            <select id="TipoMenu" name="tipoMenu">
-                                <option value="Entrada">Entrada</option>
-                                <option value="PlatoPrincipal">Plato Principal</option>
-                                <option value="Postre">Postre</option>
-                            </select><br><br>
+                            <div class="form-group">
+                                <label for="tipoMenu">Tipo de menú</label>
+                                <select class="form-control" id="tipoMenu">
+                                    <option value="Entrada">Entrada</option>
+                                    <option value="PlatoPrincipal">Plato Principal</option>
+                                    <option value="Postre">Postre</option>
+                                </select>
+                            </div>
 
-                            <label for="precio">Ingresa el precio:</label><br>
-                            <input type="text" id="precio" name="precio" value="Precio:"><br><br>
+                            <div class="form-group">
+                                <label for="precio">Precio</label>
+                                <input type="text" class="form-control" id="precio" placeholder="Ingrese el precio">
+                            </div>
 
-                            <input type="checkbox" name="vigente" value=".">Si está vigente
-                            <br><br>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="vigente">
+                                <label class="form-check-label" for="vigente">Si está vigente</label>
+                            </div><br>
 
-                            <label for="TipoComida">Seleccione:</label>
-                            <select id="TipoComida" name="tipoComida">
-                                <option value="Normal">Normal</option>
-                                <option value="vegetariano">Vegetariano</option>
-                                <option value="Celíaco">Celíaco</option>
-                                <option value="Diabético">Diabético</option>
-                            </select><br><br><br>
-
-                            <input type="submit" value="Añadir Plato">
-                            <button type="reset">Reiniciar</button>
-                    </fieldset>
-                </form><br><br>
-
+                            
+                            <div class="form-group">
+                                <label for="tipoComida">Tipo de comida</label>
+                                <select class="form-control" id="tipoComida">
+                                    <option value="Normal">Normal</option>
+                                    <option value="vegetariano">Vegetariano</option>
+                                    <option value="Celíaco">Celíaco</option>
+                                    <option value="Diabético">Diabético</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark">Añadir</button>
+                            <button type="button" class="btn btn-outline-dark">Reiniciar</button>
+                           
+                   
+                </form><br>
+                <hr>
                 <!--MODIFICAR PLATO-->
+                <h2 id="modifica">Modificar Plato</h2>
                 <form>
-                    <fieldset>
-                        <legend> Modificar Plato </legend>
-                        <label for="buscador">BUSCADOR:</label><br>
-                        <input type="text" id="buscador" name="buscador" value="Ingresa el nombre del plato:">
-                        <input type="submit" value="Buscar"> 
-                        <br><br><br>
+                        <h5> Buscador </h5>
 
-                        <select id="BusquedaPlatos" name="BusquedaPlatos" size="10" multiple> 
-                            <option value="Pizza">Pizza ...</option>
-                            <option value="...">Agregar todos los platos</option>
-                            <!--RESPECTO DE LA SELECCIÓN QUE SE HAGA, APARECERAN LOS DATOS A MODIFICAR-->
-                        </select>
+                        <div class="form-group">
+                            <label for="codigoPlato">Código</label>
+                            <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
+                        </div>
+                        <button type="button" class="btn btn-outline-dark">Buscar</button>
+                        <br><br>
 
                         <!--VALORES A MODIFICAR-->
-                        <label for="codigo">Codigo:</label><br>
-                            <input type="text" id="codigo" name="codigo" value="Codigo:"><br><br>
+                        <h5> Nuevos datos </h5>
 
-                            <label for="nombre">Nombre del plato:</label><br>
-                            <input type="text" id="nombre" name="nombre" value="Nombre:"><br><br>
+                        <div class="form-group">
+                            <label for="codigoPlato">Código</label>
+                            <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
+                        </div>
 
-                            <label for="descripcion">Descripcion:</label><br>
-                            <textarea name="descripcion" rows="10" cols="30"></textarea><br><br>
+                        <div class="form-group">
+                            <label for="nombrePlato">Nombre del plato</label>
+                            <input type="text" class="form-control" id="nombrePlato" placeholder="Nombre del plato">
+                        </div>
 
-                            <label for="TipoMenu">Seleccione:</label>
-                            <select id="TipoMenu" name="tipoMenu">
+                        <div class="form-group">
+                            <label for="descripcion">Descripción</label>
+                            <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tipoMenu">Tipo de menú</label>
+                            <select class="form-control" id="tipoMenu">
                                 <option value="Entrada">Entrada</option>
                                 <option value="PlatoPrincipal">Plato Principal</option>
                                 <option value="Postre">Postre</option>
-                            </select><br><br>
+                            </select>
+                        </div>
 
-                            <label for="precio">Ingresa el precio:</label><br>
-                            <input type="text" id="precio" name="precio" value="Precio:"><br><br>
+                        <div class="form-group">
+                            <label for="precio">Precio</label>
+                            <input type="text" class="form-control" id="precio" placeholder="Ingrese el precio">
+                        </div>  
 
-                            <input type="checkbox" name="vigente" value=".">Si está vigente
-                            <br><br>
-
-                            <label for="TipoComida">Seleccione:</label>
-                            <select id="TipoComida" name="tipoComida">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="vigente">
+                            <label class="form-check-label" for="vigente">Si está vigente</label>
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                            <label for="tipoComida">Tipo de comida</label>
+                            <select class="form-control" id="tipoComida">
                                 <option value="Normal">Normal</option>
                                 <option value="vegetariano">Vegetariano</option>
                                 <option value="Celíaco">Celíaco</option>
                                 <option value="Diabético">Diabético</option>
-                            </select><br><br><br>
-
-                            <input type="submit" value="Modificar Plato">
-                            <button type="reset">Reiniciar</button>
-                    </fieldset>
-                </form><br><br>
-
+                            </select>
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-outline-dark">Modificar</button>
+                        <button type="button" class="btn btn-outline-dark">Reiniciar</button>
+                   
+                </form><br>
+                <hr>
                 <!--ELIMINAR PLATO-->
+                <h2 id="elimina">Eliminar Plato</h2>
                 <form>
-                    <fieldset>
-                        <legend> Eliminar Plato </legend>
-                        <label for="buscador">BUSCADOR:</label><br>
-                        <input type="text" id="buscador" name="buscador" value="Ingresa el nombre del plato:">
-                        <input type="submit" value="Buscar"> 
-                        <br><br><br>
+                        <h5> Buscador </h5>
 
-                        <select id="BusquedaPlatos" name="BusquedaPlatos" size="10" multiple> 
-                            <option value="Pizza">Pizza ...</option>
-                            <option value="...">Agregar todos los platos</option>
-                        </select><br><br>
+                        <div class="form-group">
+                            <label for="codigoPlato">Código</label>
+                            <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
+                        </div>
+                        <button type="button" class="btn btn-outline-dark">Buscar</button>
+                        <br><br>
+                        <button type="button" class="btn btn-outline-dark">Eliminar</button>
+                        <button type="button" class="btn btn-outline-dark">Cancelar</button>
+                 
+                </form><br>
+                <hr>
 
-                        <input type="submit" value="Eliminar Plato">
-                        <button type="reset">Cancelar</button>
-
-                    </fieldset>
-                </form>
-
-            </section>
+           
         </div>
+
 
         <footer>
             <br>
