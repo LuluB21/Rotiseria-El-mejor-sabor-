@@ -1,0 +1,15 @@
+.nav nav-tabs {
+    position: sticky;
+    background-color: aliceblue;
+    width: 100%;
+    max-width:110%; 
+    flex: 1 1 auto;
+}
+
+.nav-item{
+    text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0px;
+}

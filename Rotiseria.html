@@ -5,82 +5,81 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Rotiseria "El mejor Sabor"</title>
         <link rel="stylesheet" href="Rotiseria.css">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/js/bootstrap.min.js"></script>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-            <div class="nav">
-            <ul id="navegacion">
-                <li class="nav-item">
-                    <a href="Rotiseria.html" class = "Inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Menues.html" class = "Menu">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Contacto.html" class = "Contacto">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a href="IniciarSesion.html" class = "IniciarSesion">
-                        <img src="iconoIniciarSesion1.png" alt="Iniciar Sesion">
-                    </a>
-                </li>
-              </ul>
-            </div>
-        </header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                  <a class="navbar-brand" href="#">WebSiteName</a>
-              </div>
-              <ul class="nav navbar-nav">
-               <li><a href="#">Peliculas en Cartel</a></li>
-               <li><a href="#">Horarios</a></li>
-               <li><a href="#">Proximos Estrenos</a></li>
-               <li><a href="#">Precios</a></li>
-              </ul>
-            </div>  
-        </nav> 
+    <div class="Contenedor">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="Rotiseria.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Menues.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="IniciarSesion.html">
+                    <img class="IconIS" src="iconoIniciarSesion1.png" alt="Iniciar Sesion">
+                </a>
+            </li>
+        </ul>
+
         
+        <header class="inicio" style="max-width:1440px; min-width:500px" id="home">
+            <div class="imagenFondo">
+                <img class="imagenFondo" src="/FondoMadera.jpeg" alt="fondo" width="110%">
+                <div id="recuadro">
+                    <div class="rotiseriaTXT">
+                        <p class = "rotiseriaTXT">ROTISERIA "EL MEJOR SABOR"</p>
+                        <div class="btn-outline-dark">
+                            <button type="button" class="btn-outline-dark" href="Pedido.html" >HACER PEDIDO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 
-        <main class = "MenuGeneral">
-            <section id = "PrimeraVista">
-                <h1 style="text-align:center;">ROTISERIA "EL MEJOR SABOR"</h1>
-                <p style="text-align: center;">
-                    <a href="Pedido.html">HACER PEDIDO</a>
-                </p>
-            </section>
+                <br><br>
+                
+        </header>
 
-            <section id = "TipoDeEntrega">
-                <article id = "Retiro">
-                    <img src="RetiroPorLocal.png" alt="Retiro Por Local">
-                    <h3 style = "text-align: center">RETIRÁ POR LOCAL</h3>
-                </article>
-                <article id = "Entrega">
-                    <img src = "EnvioADomicilio.png" alt = "Entrega En Tu Puerta">
-                    <h3 style = "text-align: center">ENTREGA EN TU PUERTA</h3>
-                </article>
-            </section>
+        <div class = "MenuGeneral">
+            <div class="row" style = "float: right">
+                <div class="card" style="width: 18rem;">
+                    <img src="RetiroPorLocal.png" class="card-img-top" alt="Retiro Por Local">
+                    <div class="card-body">
+                    <p class="card-text">RETIRÁ POR LOCAL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style = "float: left">
+                <div class="card" style="width: 18rem;">
+                    <img src="EnvioADomicilio.png" class="card-img-top" alt="Entrega En Tu Puerta">
+                    <div class="card-body">
+                    <p class="card-text">ENTREGA EN TU PUERTA</p>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
             <section id = "EspecialSemana">
                 <h2 style="text-align:left;">ESPECIAL DE LA SEMANA</h2>
                 <p align = "left">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 <img src = "EspecialSemana.png" alt = "Especial De La Semana">
             </section>
-
-        </main>
-
-        <!--SECCION PARA ESPECIAL DE LA SEMANA-->
-        <div id = "EspecialSemana">
-            <div>
-                
-            </div>
         </div>
+
+
+
 
         <!--PIE DE PAGINA-->
         <footer>
@@ -89,6 +88,6 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
+    </div>
     </body>
 </html> 

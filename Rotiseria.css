@@ -1,0 +1,128 @@
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav nav-tabs, .header, .imagenFondo, .MenuGeneral, .EspecialSemana, .footer{
+    flex-grow: 1;
+    flex-basis: 100%; 
+    padding: 0px;
+}
+
+.container-fluid{
+    background-color: aliceblue;
+    position: fixed; 
+    bottom: 100; 
+    left: 0; 
+    right: 0;
+}
+
+.nav nav-tabs {
+    position: sticky;
+    background-color: aliceblue;
+    width: 100%;
+    max-width:110%; 
+    flex: 1 1 auto;
+}
+
+.nav-item{
+    text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0px;
+}
+
+
+.imagenFondo {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    max-width:110%; 
+    min-width:500px;
+    left:50%;
+    flex: 1 1 auto;
+}
+
+#recuadro {
+    position: absolute;
+    left: 25rem;
+    width: 50%;
+    height: 88%;
+    top:10;
+    bottom: 0;
+    z-index:40;
+    background-color: aqua;
+    margin: 50;
+    border: solid transparent;
+}
+
+.rotiseriaTXT {
+    position: absolute;
+    text-align: center;
+    font-size: 2.3em;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: aliceblue;
+    /*top/bottm y right/left*/
+    margin: 25px 60px;
+}
+
+.btn-outline-dark{
+    position: absolute;
+    background-color: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.8em;
+    text-align: center;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    /*top right bottom left*/
+    margin: 100px 50px 10px 50px;
+}
+
+.btn-outline-dark:link {color:aliceblue;}
+.btn-outline-dark:hover {background-color:aliceblue;}
+.btn-outline-dark:visited {color:black;}
+.btn-outline-dark:active {background-color: black; color: aliceblue;}
+
+.MenuGeneral {
+    background-color: aliceblue;
+}
+
+
+
+@media all and (min-width: 600px){
+    .aside {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+        flex: 1 1 auto;
+    }
+}
+/* tamaño pc */
+@media all and (min-width: 800px){
+    .nav nav-tabs{flex:2 0;}
+    .header{order: 1;}
+    .imagenFondo{order: 2;}
+    .EspecialSemana{order: 3;}
+    .footer{order: 4;}
+}
