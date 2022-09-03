@@ -29,13 +29,16 @@
             </li>
         </ul>
 
-	<form>
-        <fieldset> 
-        Fecha para el listado de ventas: <br>
-			<input type="date" name = "fechaListadoVentas"><br><br> 
-            <input type= "submit" value="Aceptar">
-        </fieldset>
-    </form>
+        <div class="container">
+            <h3>Ingrese una fecha para generar el listado</h3>
+            <form>
+                    <div class="form-group">
+                        <label for="fechaListadoVentas">Fecha de las ventas</label>
+                        <input type="date" class="form-control" id="fechaListadoVentas" placeholder="Fecha de nacimiento">
+                    </div><br> 
+                    <button type="button" class="btn btn-outline-dark">Aceptar</button>	
+            </form>
+        </div>
     
     <!--PIE DE PAGINA-->
         <footer>

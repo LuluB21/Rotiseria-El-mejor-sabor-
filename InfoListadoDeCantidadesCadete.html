@@ -28,21 +28,30 @@
                 </a>
             </li>
         </ul>
-        
-
-	<form>
-        <fieldset> 
-            CUIL del cadete: <br>
-		    <input type= "number" name= "cuilEmpleado"><br>
-            <h5>Periodo solicitado:</h5>
-            Fecha desde <br>
-			<input type="date" name = "fechaDesde"><br><br> 
-             Fecha hasta <br>
-		    <input type="date" name = "fechaHasta"><br><br>     
-            <input type= "submit" value="Aceptar">
-        </fieldset>
-    </form>
     
+        <div class="container"> 
+            <h3>Ingrese los datos para generar el listado</h3>
+            <form>
+                    <div class="form-group">
+                        <label for="cuilEmpleado">Cuil del cadete</label>
+                        <input type="number" class="form-control" id="cuilEmpleado" placeholder="Ingrese cuil">
+                    </div>
+                    <br>
+                    <h5>Periodo solicitado:</h5>
+                    <div class="form-group">
+                        <label for="fechaDesde">Fecha desde</label>
+                        <input type="date" class="form-control" id="fechaDesde" placeholder="Fecha de nacimiento">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="fechaHasta">Fecha hasta</label>
+                        <input type="date" class="form-control" id="fechaHasta" placeholder="Fecha de nacimiento">
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-dark">Aceptar</button>	  
+            </form>
+        </div>
+        
     <!--PIE DE PAGINA-->
         <footer>
         <br>

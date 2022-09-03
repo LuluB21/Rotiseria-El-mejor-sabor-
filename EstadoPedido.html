@@ -28,26 +28,52 @@
                 </a>
             </li>
         </ul>
+
+        <h2>Estado del pedido </h2><br>
         
+        <div class="container">
+            <h4>Buscar pedido </h4> <br>
+            <form>
+                <div class="form-group">
+                    <label for="codigoPedido">Código del pedido</label>
+                    <input type="text" class="form-control" id="codigoPedido" placeholder="Ingrese código del pedido">
+                </div>
+                <br>
+                <button type="button" class="btn btn-outline-dark">Aceptar</button>	
+            </form> <br>
 
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Código del pedido</th>
+                    <th scope="col">Estado actual</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>  
+                </tr>
 
-        <table border="1">
-            <tr>
-                <th>Codigo_pedido</th>
-                <th>Estado_Actual</th>
-            </tr>
-        </table>
-
-        <h4>Seleccione un nuevo estado</h4>
-
-        <form>
-            <select id="Estado del pedido" name="estadoPedido">
-                <option value="entregado">Entregado</option>
-                <option value="devuelto">Devuelto</option>
-              </select>
-            <input type= "submit" value="Guardar">
-
+                </tbody>
+            </table>
+            <br>
+            <h4>Seleccione un nuevo estado</h4>
+            <br>
+            <form>
+            <div class="form-group">
+				<label for="estadoPedido">Estado del pedido</label>
+				<select class="form-control" id="estadoPedido">
+					<option value="entregado">Entregado</option>
+					<option value="devuelto">Devuelto</option>
+				</select>
+			</div>
+            <br>
+			
+			<button type="button" class="btn btn-outline-dark">Guardar</button>	
         </form>
+        </div>
+        
         <!--PIE DE PAGINA-->
         <footer>
             <br>
