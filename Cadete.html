@@ -34,99 +34,101 @@
     </head>
     <body>
 		
-	<div class="container">
-	<form>
-		<h4>Datos personales</h4>
+	<form class="form">
+		<div class="form-container">
+			<h2>Registro de Cadetes</h2>
+			<h5>Datos personales</h5>
 
-		<div class="form-group">
-			<label for="cuilEmpleado">Cuil</label>
-			<input type="number" class="form-control" id="cuilEmpleado" placeholder="Ingrese cuil">
-		</div>
+			<div class="form-group">
+				<label for="cuilEmpleado">Cuil</label>
+				<input type="number" class="form-control" id="cuilEmpleado" placeholder="Ingrese cuil">
+			</div>
+			
+			<div class="form-group">
+				<label for="nombre">Nombre</label>
+				<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+			</div>
+			
+			
+			<div class="form-group">
+				<label for="apellido">Apellido</label>
+				<input type="text" class="form-control" id="apellido" placeholder="Apellido">
+			</div>	
+				
+
+			<div class="form-group">
+					<label for="fechaN">Fecha de nacimiento</label>
+					<input type="date" class="form-control" id="fechaN" placeholder="Fecha de nacimiento">
+			</div>
 		
-		<div class="form-group">
-			<label for="nombre">Nombre</label>
-			<input type="text" class="form-control" id="nombre" placeholder="Nombre">
-		</div>
+				<div class="form-group">
+					<label for="tFijo">Teléfono Fijo</label>
+					<input type="number" class="form-control" id="tFijo" placeholder="Ingrese su número de teléfono">
+				</div>
+
+				<div class="form-group">
+					<label for="tCelular">Celular</label>
+					<input type="number" class="form-control" id="tCelular" placeholder="Ingrese su número de teléfono">
+				</div>
+				<br> 
+				<h5>Datos de domicilio</h5>
+
+			
+				<div class="form-group">
+					<label for="calle">Calle</label>
+					<input type="text" class="form-control" id="calle" placeholder="Calle">
+				</div>
+				
+				
+				<div class="form-group">
+					<label for="numeroDom">Número</label>
+					<input type="number" class="form-control" id="numeroDom" placeholder="Número de domicilio">
+				</div>
+
+				<div class="form-group">
+					<label for="localidad">Localidad</label>
+					<input type="text" class="form-control" id="localidad" placeholder="Localidad">
+				</div>
 		
+				
+				<div class="form-group">
+					<label for="depto">Departamento</label>
+					<input type="text" class="form-control" id="depto" placeholder="Departamento">
+				</div>
+				<br> 
+				<h5>Datos laborales</h5>
+
+				<div class="form-group">
+					<label for="fechaIngreso">Fecha de ingreso en la rotiseria</label>
+					<input type="date" class="form-control" id="fechaIngreso" placeholder="Fecha de ingreso en la rotiseria">
+				</div>
 		
-		<div class="form-group">
-			<label for="apellido">Apellido</label>
-			<input type="text" class="form-control" id="apellido" placeholder="Apellido">
-		</div>	
-			
+				<div class="form-group">
+					<label for="vigenciaCarnet">Vigencia carnet</label>
+					<input type="date" class="form-control" id="vigenciaCarnet" placeholder="Vigencia carnet">
+				</div>  
 
-		<div class="form-group">
-				<label for="fechaN">Fecha de nacimiento</label>
-				<input type="date" class="form-control" id="fechaN" placeholder="Fecha de nacimiento">
-		</div>
-	
-			<div class="form-group">
-				<label for="tFijo">Teléfono Fijo</label>
-				<input type="number" class="form-control" id="tFijo" placeholder="Ingrese su número de teléfono">
+				<div class="form-group">
+					<label for="patente">Patente del vehiculo</label>
+					<input type="text" class="form-control" id="patente" placeholder="Patente del vehiculo">
+				</div>
+				
+				<div class="form-group">
+					<label for="zona">Zona de entregas asignada</label>
+					<select class="form-control" id="zona">
+						<option value="norte">Norte</option>
+						<option value="sur">Sur</option>
+						<option value="este">Este</option>
+						<option value="oeste">Oeste</option>
+					</select>
+				</div>
+				<br>
+				
+				<button type="button" class="btn btn-outline-dark">Guardar</button>	
 			</div>
-
-			<div class="form-group">
-				<label for="tCelular">Celular</label>
-				<input type="number" class="form-control" id="tCelular" placeholder="Ingrese su número de teléfono">
-			</div>
-			<br> 
-			<h4>Datos de domicilio</h4>
-
-  		
-			<div class="form-group">
-				<label for="calle">Calle</label>
-				<input type="text" class="form-control" id="calle" placeholder="Calle">
-			</div>
-			
-			
-			<div class="form-group">
-				<label for="numeroDom">Número</label>
-				<input type="number" class="form-control" id="numeroDom" placeholder="Número de domicilio">
-			  </div>
-
-			<div class="form-group">
-				<label for="localidad">Localidad</label>
-				<input type="text" class="form-control" id="localidad" placeholder="Localidad">
-			</div>
-	 
-			
-			<div class="form-group">
-				<label for="depto">Departamento</label>
-				<input type="text" class="form-control" id="depto" placeholder="Departamento">
-			  </div>
-			<br> 
-			<h4>Datos laborales</h4>
-
-			<div class="form-group">
-				<label for="fechaIngreso">Fecha de ingreso en la rotiseria</label>
-				<input type="date" class="form-control" id="fechaIngreso" placeholder="Fecha de ingreso en la rotiseria">
-		    </div>
-	
-			<div class="form-group">
-				<label for="vigenciaCarnet">Vigencia carnet</label>
-				<input type="date" class="form-control" id="vigenciaCarnet" placeholder="Vigencia carnet">
-		    </div>  
-
-			<div class="form-group">
-				<label for="patente">Patente del vehiculo</label>
-				<input type="text" class="form-control" id="patente" placeholder="Patente del vehiculo">
-			</div>
-			
-			<div class="form-group">
-				<label for="zona">Zona de entregas asignada</label>
-				<select class="form-control" id="zona">
-					<option value="norte">Norte</option>
-					<option value="sur">Sur</option>
-					<option value="este">Este</option>
-					<option value="oeste">Oeste</option>
-				</select>
-			</div>
-			<br>
-			
-			<button type="button" class="btn btn-outline-dark">Guardar</button>	
-			
-			</form>
-		</div>
+				
+		</form>
+		
 	   		<!--PIE DE PAGINA-->
        			<footer>
            		<br>

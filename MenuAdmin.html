@@ -29,12 +29,16 @@
             </li>
         </ul>
 
-        <a href="#añade">Añadir Plato</a>
-        <a href="#modifica">Modificar Plato</a>
-        <a href="#elimina">Eliminar Plato</a>
+        
 
         <div class="container"> 
-           
+
+            <div class="secciones">
+                <a href="#añade">Añadir Plato</a>
+                <a href="#modifica">Modificar Plato</a>
+                <a href="#elimina">Eliminar Plato</a>
+            </div>
+
             <!--La aplicación deberá permitir registrar los diferentes menús o platos, estos pueden ser: 
             entrada, plato principal y postre. Por lo tanto, de los platos se necesita conocer: código, 
             nombre, descripción, tipo de plato, precio, si está vigente y si el plato o menú es normal, 
@@ -42,8 +46,9 @@
             
                 <!--AÑADIR PLATO-->
                 <hr>
-                <h2 id="añade">Añadir Plato</h2>
-                <form>
+                
+                <form class="form">
+                            <h2 id="añade">Añadir Plato</h2>
                     
                             <div class="form-group">
                                 <label for="codigoPlato">Código</label>
@@ -95,10 +100,13 @@
                            
                    
                 </form><br>
+               
                 <hr>
+               
                 <!--MODIFICAR PLATO-->
-                <h2 id="modifica">Modificar Plato</h2>
-                <form>
+              
+                <form class="form">
+                    <h2 id="modifica">Modificar Plato</h2>
                         <h5> Buscador </h5>
 
                         <div class="form-group">
@@ -161,9 +169,11 @@
                    
                 </form><br>
                 <hr>
+               
                 <!--ELIMINAR PLATO-->
-                <h2 id="elimina">Eliminar Plato</h2>
-                <form>
+                
+                <form class="form">
+                    <h2 id="elimina">Eliminar Plato</h2>
                         <h5> Buscador </h5>
 
                         <div class="form-group">
