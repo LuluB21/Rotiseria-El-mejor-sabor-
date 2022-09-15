@@ -13,3 +13,36 @@
     font-size: 1em;
     margin: 0px;
 }
+
+body{
+    background-color:white;
+    background-image: url(FondoMadera.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center ;
+}
+
+.container{
+    background-color:white;
+    padding: 3em 3em;
+    position:relative;
+}
+
+#texto1 {
+    color: black;
+    font-size: 45px;
+    font-weight: lighter;
+    margin: auto;
+    padding: 1.5em 2em;
+    text-align: center;
+}
+
+.list-group{
+    color:black;
+    font-size: 25px;
+    font-weight:lighter;
+    margin: auto;
+    padding: 1em 2em;
+    max-width:fit-content;
+}

@@ -16,7 +16,7 @@
 
 body{
     background-color:white;
-    background-image: url();
+    background-image: url(FondoMadera.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -24,10 +24,79 @@ body{
 }
 
 .form{
-    background-color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.6);
     margin:auto;
     width: 90%;
     max-width:400px; 
-    padding: 4em 3em;
+    padding: 3em 3em;
+    color: white;
 } 
 
+.boton{
+    text-align: center;
+}
+
+label{
+    color: gainsboro;
+    font-weight:lighter;
+}
+
+.centrar{
+    text-align: center;
+}
+
+
+.tabla{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin:auto;
+    width: 90%;
+    max-width:400px; 
+    padding: 3em 3em;
+    
+}
+
+.table tr th{
+    color: white;
+    font-weight:lighter;
+}
+
+#texto1 {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    margin: auto;
+    padding: 1.5em 2em;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#texto2 {
+    color:white;
+    font-size: 30px;
+    font-weight:lighter;
+    margin: auto;
+    padding: 1em 2em;
+    text-align: center;
+    max-width:fit-content;
+}
+
+#texto3{
+    font-size: 24px;
+    font-weight:lighter;  
+}
+
+
+.tabla2{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin:auto;
+    width: 90%;
+    max-width:fit-content; 
+    padding: 0.5em 0.5em;
+}
+
+.secciones{
+    text-align:right;
+   
+}

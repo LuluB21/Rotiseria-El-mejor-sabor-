@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="Clientes.css">
+		<link rel="stylesheet" href="Cadete.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/js/bootstrap.min.js"></script>
@@ -42,8 +42,9 @@
 		<form class="form">
 			
 			<div class="form-container">
-				<h2>Registre sus datos</h2>
 
+				<h3 id="texto2">Registro</h3>
+				
 				<div class="form-group">
 					<label for="cuil">Cuil</label>
 					<input type="number" class="form-control" id="cuil" placeholder="Ingrese su cuil">
@@ -65,9 +66,8 @@
 					<label for="tContacto">Teléfono de contacto</label>
 					<input type="number" class="form-control" id="tContacto" placeholder="Ingrese su número de teléfono">
 				</div>
-				
-
-				<h5>Datos de domicilio</h5>
+				<br>
+				<h4 id="texto3">Datos de domicilio</h4>
 				
 				<div class="form-group">
 					<label for="calle">Calle</label>
@@ -114,8 +114,8 @@
 					<textarea class="form-control" id="observacion" rows="3"></textarea>
 				</div>
 				
+					<button type="button" class="btn btn-outline-light btn-block">Guardar</button>	
 				
-				<button type="button" class="btn btn-outline-dark">Guardar</button>	
 			</div>	
 		</form>
 	

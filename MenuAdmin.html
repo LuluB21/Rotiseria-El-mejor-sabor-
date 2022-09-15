@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="MenuAdmin.css">
+        <link rel="stylesheet" href="Cadete.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/js/bootstrap.min.js"></script>
@@ -46,8 +46,8 @@
             
                 <!--AÑADIR PLATO-->
                 <hr>
-                
                 <form class="form">
+                    <div class="form-container">
                             <h2 id="añade">Añadir Plato</h2>
                     
                             <div class="form-group">
@@ -95,10 +95,10 @@
                                 </select>
                             </div>
                             <br>
-                            <button type="button" class="btn btn-outline-dark">Añadir</button>
-                            <button type="button" class="btn btn-outline-dark">Reiniciar</button>
+                            <button type="button" class="btn btn-outline-light btn-block">Añadir</button>	
+                            <button type="button" class="btn btn-outline-light btn-block">Reiniciar</button>
                            
-                   
+                        </div>
                 </form><br>
                
                 <hr>
@@ -106,73 +106,76 @@
                 <!--MODIFICAR PLATO-->
               
                 <form class="form">
-                    <h2 id="modifica">Modificar Plato</h2>
-                        <h5> Buscador </h5>
+                    <div class="form-container">
+                        <h2 id="modifica">Modificar Plato</h2>
+                            <h5> Buscador </h5>
 
-                        <div class="form-group">
-                            <label for="codigoPlato">Código</label>
-                            <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
-                        </div>
-                        <button type="button" class="btn btn-outline-dark">Buscar</button>
-                        <br><br>
+                            <div class="form-group">
+                                <label for="codigoPlato">Código</label>
+                                <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
+                            </div>
+                            <button type="button" class="btn btn-outline-light btn-block">Buscar</button>
+                            
+                            <br><br>
 
-                        <!--VALORES A MODIFICAR-->
-                        <h5> Nuevos datos </h5>
+                            <!--VALORES A MODIFICAR-->
+                            <h5> Nuevos datos </h5>
 
-                        <div class="form-group">
-                            <label for="codigoPlato">Código</label>
-                            <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
-                        </div>
+                            <div class="form-group">
+                                <label for="codigoPlato">Código</label>
+                                <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="nombrePlato">Nombre del plato</label>
-                            <input type="text" class="form-control" id="nombrePlato" placeholder="Nombre del plato">
-                        </div>
+                            <div class="form-group">
+                                <label for="nombrePlato">Nombre del plato</label>
+                                <input type="text" class="form-control" id="nombrePlato" placeholder="Nombre del plato">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="descripcion">Descripción</label>
-                            <textarea class="form-control" id="descripcion" rows="3"></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="tipoMenu">Tipo de menú</label>
-                            <select class="form-control" id="tipoMenu">
-                                <option value="Entrada">Entrada</option>
-                                <option value="PlatoPrincipal">Plato Principal</option>
-                                <option value="Postre">Postre</option>
-                            </select>
-                        </div>
+                            <div class="form-group">
+                                <label for="descripcion">Descripción</label>
+                                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="tipoMenu">Tipo de menú</label>
+                                <select class="form-control" id="tipoMenu">
+                                    <option value="Entrada">Entrada</option>
+                                    <option value="PlatoPrincipal">Plato Principal</option>
+                                    <option value="Postre">Postre</option>
+                                </select>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="precio">Precio</label>
-                            <input type="text" class="form-control" id="precio" placeholder="Ingrese el precio">
-                        </div>  
+                            <div class="form-group">
+                                <label for="precio">Precio</label>
+                                <input type="text" class="form-control" id="precio" placeholder="Ingrese el precio">
+                            </div>  
 
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="vigente">
-                            <label class="form-check-label" for="vigente">Si está vigente</label>
-                        </div>
-                        <br>
-                        
-                        <div class="form-group">
-                            <label for="tipoComida">Tipo de comida</label>
-                            <select class="form-control" id="tipoComida">
-                                <option value="Normal">Normal</option>
-                                <option value="vegetariano">Vegetariano</option>
-                                <option value="Celíaco">Celíaco</option>
-                                <option value="Diabético">Diabético</option>
-                            </select>
-                        </div>
-                        <br>
-                        <button type="button" class="btn btn-outline-dark">Modificar</button>
-                        <button type="button" class="btn btn-outline-dark">Reiniciar</button>
-                   
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="vigente">
+                                <label class="form-check-label" for="vigente">Si está vigente</label>
+                            </div>
+                            <br>
+                            
+                            <div class="form-group">
+                                <label for="tipoComida">Tipo de comida</label>
+                                <select class="form-control" id="tipoComida">
+                                    <option value="Normal">Normal</option>
+                                    <option value="vegetariano">Vegetariano</option>
+                                    <option value="Celíaco">Celíaco</option>
+                                    <option value="Diabético">Diabético</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button type="button" class="btn btn-outline-light btn-block">Modificar</button>	
+                            <button type="button" class="btn btn-outline-light btn-block">Reiniciar</button>
+                    </div>
                 </form><br>
                 <hr>
                
                 <!--ELIMINAR PLATO-->
                 
                 <form class="form">
+                    <div class="form-container">
                     <h2 id="elimina">Eliminar Plato</h2>
                         <h5> Buscador </h5>
 
@@ -180,11 +183,11 @@
                             <label for="codigoPlato">Código</label>
                             <input type="text" class="form-control" id="codigoPlato" placeholder="Ingrese código del plato">
                         </div>
-                        <button type="button" class="btn btn-outline-dark">Buscar</button>
+                        <button type="button" class="btn btn-outline-light btn-block">Buscar</button>
                         <br><br>
-                        <button type="button" class="btn btn-outline-dark">Eliminar</button>
-                        <button type="button" class="btn btn-outline-dark">Cancelar</button>
-                 
+                        <button type="button" class="btn btn-outline-light btn-block">Eliminar</button>
+                        <button type="button" class="btn btn-outline-light btn-block">Cancelar</button>
+                    </div>
                 </form><br>
                 <hr>
 
