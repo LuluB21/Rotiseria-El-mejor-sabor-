@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>El Mejor Sabor -Pedidos </title>
     </head>
@@ -28,45 +27,36 @@
                 </a>
             </li>
         </ul>
-	
 
         <form class="form">
             <div class="form-container">
                 <div class="centrar">
-                    <h3 id="texto3">Información del pedido</h3>
+                    <h3 id="texto3">Registro de pedido</h3>
+                </div>
+
+                <div class="form-group">
+                    <label for="cuil">Código del pedido</label>
+                    <input type="text" class="form-control" id="codPedido" placeholder="Código del pedido">
                 </div>
                 <br>
                 <div class="form-group">
-					<label for="tipoEntrega">   Tipo de entrega</label>
-					<select class="form-control" id="tipoEntrega">
-						<option value="aDomicilio">Envio a domicilio</option>
-						<option value="retiraLocal">Retiro en el local</option>
-					</select>
-				</div>
+                    <label for="fechaP">Fecha del pedido</label>
+                    <input type="date" class="form-control" id="fechaP">
+                </div>
                 <br>
-                <h3 id="texto4">Seleccione un rango horario para la entrega:</h3>
-                
-                <div class="form-group">
-					<label for="horaInicio">Hora de inicio</label>
-					<input type="time" class="form-control" id="horaInicio">
-				</div>  
-                
-                <div class="form-group">
-					<label for="horaFin">Hora de finalizacion</label>
-					<input type="time" class="form-control" id="horaFin" >
-				</div> 
-                <br>
-                <button id="boton" type="button" class="btn btn-outline-light btn-block">Confirmar pedido</button>	
-            </div>
-        </form>
+                <div class="centrar">  
+                    <button id="boton" type="button" class="btn btn-outline-light">Guardar</button>		
+                </div>				
+		    </div>		
+		</form>
 
-        <script src="Pedido.js"></script>
+        <script src="RegistroPedido.js"></script>
 
-        <!--PIE DE PAGINA-->
-        <footer>
-            <br>
-            <p style="text-align:center;">Derechos Reservados @2022</p>
-        </footer>
 
+            <!--PIE DE PAGINA-->
+     <footer>
+        <br>
+        <p style="text-align:center;">Derechos Reservados @2022</p>
+    </footer>
     </body>
 </html>
