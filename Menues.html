@@ -2,254 +2,415 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>El Mejor Sabor - Menus</title>
         <link rel="stylesheet" href="Menues.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/js/bootstrap.min.js"></script>
-
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <title>El Mejor Sabor - Menus</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=shadow-multiple">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+      />
     </head>
     <body>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="Rotiseria.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Menues.html">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="IniciarSesion.html">
-                    <img class="IconIS" src="iconoIniciarSesion1.png" alt="Iniciar Sesion">
-                </a>
-            </li>
-        </ul>
+            <!--NAVEGADOR-->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Rotiseria.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link active" href="Menues.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="IniciarSesion.html">Iniciar Sesion</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-menus-tab" data-bs-toggle="tab" data-bs-target="#nav-menus" type="button" role="tab" aria-controls="nav-menus" aria-selected="true">Menus</button>
+                  <button class="nav-link" id="nav-carrito-tab" data-bs-toggle="tab" data-bs-target="#nav-carrito" type="button" role="tab" aria-controls="nav-carrito" aria-selected="false">Carrito</button>                  
+                </div>
+              </nav>
 
-        <section id = "SelectorOpciones">
-            <form>
-                <label for="TipoMenu">Seleccione:</label>
-                <select id="TipoMenu" name="tipoMenu">
-                    <option value="Entrada">Entrada</option>
-                    <option value="PlatoPrincipal">Plato Principal</option>
-                    <option value="Postre">Postre</option>
-                </select>
 
-                <br><br>
 
-                <label for="TipoComida">Seleccione:</label>
-                <select id="TipoComida" name="tipoComida">
-                    <option value="Normal">Normal</option>
-                    <option value="vegetariano">Vegetariano</option>
-                    <option value="Celíaco">Celíaco</option>
-                    <option value="Diabético">Diabético</option>
-                </select>
-            </form>
-        </section>
-        <section id = "PlatosNormales">
-            <form>
 
-                <br><br>
-                <!--SI SELECCIONA ENTRADA-->
-                <label for="Entrada">Seleccione Entrada:</label>
-                <select id="Entrada" name="Comida">
-                    <option value="Empanadas">Empanadas</option>
-                    <option value="Ensaladas">Ensaladas</option>
-                    <option value="Nachos">Nachos</option>
-                </select>
 
-                <br><br>
 
-                <!--SI SELECCIONA PLATO PRINCIPAL-->
-                <label for="Plato">Seleccione Plato Principal:</label>
-                <select id="Plato" name="Comida">
-                    <option value="Hamburguesas">Hamburguesas</option>
-                    <option value="Pizzas">Pizzas</option>
-                    <option value="Al Plato">Al Plato</option>
-                    <option value="Carnes">Carnes</option>
-                    <option value="Sopas">Sopas</option>
-                </select>
 
-                <br><br>
 
-                <!--SI SELECCIONA POSTRE-->
-                <label for="Postres">Seleccione Postre:</label>
-                <select id="Postre" name="Postre">
-                    <option value="Helados">Helados</option>
-                    <option value="Gelatinas">Gelatinas</option>
-                    <option value="Pasteles">Pasteles</option>
-                </select>
-            </form>
-        </section>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-menus" role="tabpanel" aria-labelledby="nav-menus-tab">
 
-        <section id = "Menus">
-            <form>
-                <br><br><br>
-                <H3>COMENTARIO: PLATO PRINCIPAL NORMAL</H3>
-                <fieldset>
-                    <legend> <b>HAMBURGUESAS</b> </legend>
-                    <br>
-                    <fieldset>
-                        <legend><b>Hamburguesa Clásica</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Hamburguesa Especial</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Hamburguesa Americana</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Hamburguesa Con Rúcula</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
 
-                </fieldset>
-                <br><br><br>
-                <fieldset>
-                    <legend> <b>PIZZAS</b> </legend>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Especial</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Argentina</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Napolitana</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Calabresa</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-
-                </fieldset>
-                <br><br><br>
-                <fieldset>
-                    <legend> <b>AL PLATO</b> </legend>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Especial</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Argentina</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Napolitana</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Calabresa</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <br><br><br>
-                <fieldset>
-                    <legend> <b>AL PLATO</b> </legend>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Especial</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Argentina</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Napolitana</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend><b>Pizza Calabresa</b></legend>
-                        <!--IMAGEN-->
-                        <p>Descripcion</p>
-                        <p align="right"><i>$350</i></p>
-                        <input type="submit" value="Agregar Al Carrito">
-                    </fieldset>
-                    <br>
-
-                </fieldset>
-            </form>
-        </section>
-
-        <!--FALTAN MENUES-->
+                    <div class="DivTexto">
+                        <p id="titulo">Menú de Platillos</p>
+                        <br>
+                        <p id="comentario">Bienvenido al menú de platillos, aquí encontrará todos los platillos disponibles en la rotiseria. Puede ordenar los platillos por categoría en el botón "<i class="fas fa-hamburger fa-fw"></i> MENÚ" y también ordenarlos por orden alfabético o por precio en el botón "<i class="fas fa-sort-alpha-down fa-fw"></i> ORDENAR POR". Además, puede buscar platillos por nombre haciendo clic en el botón "<i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR"</p>
+                    </div>
         
-        <!--PIE DE PAGINA-->
-        <footer>
-            <br>
-            <p style="text-align:center;">Derechos Reservados @2022</p>
-        </footer>  
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-      
+                    <div class="Seleccion">
+                        <!--BOTON TIPO DE MENÚ-->
+                        <div class="dropdown">
+                            <button class="dropbtn"> 
+                                <i class="fas fa-hamburger fa-fw"></i> Menú: 
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Entrada</a>
+                                <hr class="dropdown-divider">
+                                <a href="#">Plato Principal</a>
+                                <hr class="dropdown-divider">
+                                <a href="#">Postre</a>
+                            </div> 
+                        </div>
+        
+                        <!--BOTON BUSCAR-->
+                        <div class="Buscar">
+                            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                                <input type="text" placeholder="Buscar plato: " name="search2">
+                                <button type="submit">
+                                    <i class="fas fa-search fa-fw"></i>
+                                </button>
+                            </form>
+                        </div>
+        
+                        <!--BOTON ORDENAR POR-->
+                        <div class="ordenar">
+                            <div class="dropdown">
+                                <button class="dropbtn"> 
+                                    <i class="fas fa-sort-alpha-down fa-fw"></i> Ordenar por: 
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Ascendente (A-Z)</a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#">Descendente (Z-A)</a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#">Precio (Menor a Mayor)</a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#">Precio (Mayor a Menor)</a>
+                                </div> 
+                            </div>
+                        </div>   
+                    </div>
+        
+                    <div class="TextoRefDiv" id="Entrada">
+                        <p class="TextoRef">ENTRADAS</p>
+                    </div> 
+        
+                    <div class="platosEntrada">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/cartaPlato.jpg" class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title1</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="precio">$250</span></li>
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/cartaPlato.jpg" class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title2</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="precio">$250</span></li>
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button  class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/cartaPlato.jpg" class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title3</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="precio">$250</span></li>
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button  class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+        
+                    <div class="TextoRefDiv" id="PlatoPrincipal">
+                        <p class="TextoRef">PLATOS PRINCIPALES</p>
+                    </div>
+                    <div class="platosPrincipales">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/PlatoPrincipal.jpg" class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title4</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                                        </li>
+                                        
+
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button  class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/PlatoPrincipal.jpg"  class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title5</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                                        </li>
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/PlatoPrincipal.jpg" class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title6</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                                        </li>
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>     
+        
+                    <div class="TextoRefDiv" id="Postre">
+                        <p class="TextoRef">POSTRES</p>
+                    </div>
+                    <div class="postres">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/Postre.jpg" class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title7</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="precio">$250</span></li>
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/Postre.jpg" class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title8</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="precio">$250</span></li>
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="grid-item">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="/Postre.jpg" class="card-img-top" alt="imagen">
+                                        </div>
+                                    <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title9</h5>
+                                        <p class="card-text">Breve descripcion de lo que contiene el platillo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis blanditiis laboriosam repudiandae dolores consectetur incidunt nostrum eveniet tenetur nihil molestiae voluptas odio at, quibusdam, consequuntur illo tempore sunt quidem aspernatur enim. Placeat accusantium enim facilis voluptatem, totam eum consectetur, quasi itaque neque sunt nobis aliquam dolore beatae a harum nam nemo vitae voluptates maiores quia consequatur quam consequuntur aperiam quo? Modi reiciendis ex fuga rem ratione perferendis, praesentium hic dolorem molestias! Laborum, quo tempora doloremque deserunt totam a error, molestiae, expedita recusandae hic dolor. Magnam reprehenderit ducimus deleniti est, maiores neque quibusdam nostrum, distinctio nam accusantium tenetur, quisquam doloremque. </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="precio">$250</span></li>
+                                        <li class="list-group-item">                
+                                            <input type="text" value="Cantidad: " class="form-control text-left" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >  
+                                        </li>
+                                        <li class="list-group-item">Normal, Celiaco, diabetico, veg</li>
+                                    </ul>
+                                    <div class="card-body2" id="boton">
+                                        <button class="btn btn-primary button">Añadir a Carrito</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+
+                </div>
+                <div class="tab-pane fade carrito" id="nav-carrito" role="tabpanel" aria-labelledby="nav-carrito-tab">
+
+                    <br><br><br><br>
+                    <table class="table table-dark table-hover">
+                        <thead>
+                          <tr class="text-primary">
+                            <th scope="col">#</th>
+                            <th scope="col">Productos</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                          </tr>
+                        </thead>
+                        <tbody class="tbody">
+                          
+                        </tbody>
+                      </table>
+                      <br><br>
+                      <div class="row mx-4">
+                        <div class="col">
+                          <h3 class="itemCartTotal text-white">Total: 0</h3>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                          <button class="btn btn-success">COMPRAR</button>
+                        </div>
+                      </div>
+
+                </div>
+              </div>
+
+
+
+
+            <footer>
+                <p>Derechos Reservados @2022</p>
+            </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+      <script src="./Carrito.js"></script>
+
     </body>
 </html> 

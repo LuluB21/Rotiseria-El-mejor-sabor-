@@ -1,15 +1,621 @@
-.nav nav-tabs {
-    position: sticky;
-    background-color: aliceblue;
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#e6e6e6;
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    background-image:url('FondoMadera.jpeg');
+    background-repeat: repeat;
+    background-position: center top;
+    /* border: 10px solid red; */
+}
+
+nav {
+    /* Cuando se haga scroll, seguirá apareciendo fija en la parte superior*/
+    position: fixed; 
+    background-color:transparent;
+    /*Tamaño*/
     width: 100%;
-    max-width:110%; 
-    flex: 1 1 auto;
+    top: 0;
+    height: 60px;
+    /*PASA A MAYUSCULAS*/
+    text-transform: uppercase;
+    border-bottom: 2px solid #e6e6e6;
+    z-index: 100;
 }
 
 .nav-item{
+    /*alineacion dentro de cada item*/
     text-align:center;
+    /*FUENTE*/
     font-family: "Times New Roman", Times, serif;
+    /*NEGRITA*/
     font-weight: bold;
-    font-size: 1em;
-    margin: 0px;
+    /*TAMAÑO DE FUENTE*/
+    font-size: 1px;
+    background:transparent;
+    height: 60px;
+    
+}
+
+a.nav-link {
+    color: white;
+    height: 60px;
+}
+
+a.nav-link.active {
+    color: black;
+    background:rgb(250,248,241);
+}
+
+.nav-item:hover{
+    background-color:#f2f2f2;
+    transition: 0.5s;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 50px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: transparent;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.DivTexto {
+    position: absolute;
+    background-color: aliceblue;
+    width: 90%;
+    height: 40vh;
+    text-align:left;
+    align-items: center;
+	justify-content: center;
+    display: flex;
+    top:70px;
+    left:5%;
+}
+
+#titulo {
+    font-family: "Sofia", Times, serif;
+    font-size: 50px;
+    margin: 10px;
+    margin-left: 40px;
+    text-align: center;
+    color:maroon;
+}
+
+#comentario {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 23px;
+    margin-right: 40px;
+    margin-left: 30px;
+    text-align: justify;
+    color: maroon;
+}
+
+.Seleccion {
+    position: absolute;
+    background-color: aliceblue;
+    width: 90%;
+    height: 10vh;
+    text-align:left;
+    /* align-items: center;
+	justify-content: center; */
+    display: flex;
+    top:380px;
+    left:5%;
+}
+
+.dropbtn {
+    background-color: aliceblue;
+    color: maroon;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 30px;
+    top: 10px;
+    
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: maroon;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {
+    background-color: maroon;
+    color:#e6e6e6;
+}
+
+
+/*BOTON BUSCAR*/
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid maroon;
+    float: left;
+    width: 80%;
+    background: aliceblue;
+}
+  
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: maroon;
+    color: white;
+    font-size: 17px;
+    border: 1px solid maroon;
+    border-left: none;
+    cursor: pointer;
+}
+  
+form.example button:hover {
+    background: black;
+}
+  
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.Buscar {
+    position: relative;
+    display: inline-block;
+    left: 30%;
+    top: 10px;
+}
+
+.ordenar {
+    position: absolute;
+    display: inline-block;
+    left: 80%;
+    top: 0px;
+}
+
+.platosEntrada {
+    position: absolute;
+    background-color: aliceblue;
+    width: 90%;
+    height: 200vh;
+    top:530px;
+    left:5%;
+    align-items: center;
+	justify-content: center;
+    display: flex;
+    text-align: center;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 95%;
+    height: 200vh;
+    top: 15vh;
+    padding: 10px;
+}
+.grid-item {
+    font-size: 30px;
+    text-align: center;
+    top: 15vh;
+}
+.TextoRefDiv {
+    position: absolute;
+    width: 90%;
+    height: 10vh;
+    align-items: center;
+	justify-content: center;
+    display: flex;
+    text-align: center;
+    background-color: aliceblue;
+    top:470px;
+    left:5%;
+}
+
+#PlatoPrincipal{
+    top:275vh;
+}
+.platosPrincipales {
+    position: absolute;
+    background-color: aliceblue;
+    width: 90%;
+    height: 200vh;
+    top:285vh;
+    left:5%;
+    align-items: center;
+	justify-content: center;
+    display: flex;
+    text-align: center;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#Postre {
+    top:490vh;
+}
+.postres {
+    position: absolute;
+    background-color: aliceblue;
+    width: 90%;
+    height: 200vh;
+    top:500vh;
+    left:5%;
+    align-items: center;
+	justify-content: center;
+    display: flex;
+    text-align: center;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+
+
+}
+
+
+.TextoRef {
+    font-weight: bold;
+    font-family: "Sofia", Times, serif;
+    font-size: 30px;
+} 
+
+.card.mb-3 {
+    background-color: rgb(249, 252, 255);
+    min-width: 100%;
+}
+
+.col-md-4 {
+    align-items: center;
+	justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.card-img-top {
+    margin:5px;
+    margin-left: 5px;
+}
+
+h5.card-title {
+    font-weight: bold;
+    font-family: "Sofia", Times, serif;
+    font-size: 30px;
+}
+
+p.card-text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+li.list-group-item {
+    /* background-color: rgb(249, 252, 255); */
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
+
+button.card-link {
+    font-family: "Sofia", Times, serif;
+    background-color: maroon;
+    color:aliceblue;
+    border:2px solid black;
+    font-size: 20px;
+}
+
+#boton {
+    align-items: left;
+	justify-content: left;
+    display: flex;
+    text-align: left;
+}
+
+footer {
+    position: absolute;
+    background-color: rgb(250,248,241);
+    width: 100%;
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+	justify-content: center;
+    display: flex;
+
+    top: 710vh;
+}
+
+
+
+.carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .table__productos{
+    display: flex;
+  }
+  .table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .hide, .remove{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){ 
+    .checkbtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 100;
+        margin: 15px;
+        background-color: black;
+    }
+    nav {
+        position: absolute;
+        background: aliceblue;
+        width: 100%;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(250,248,241);
+        color: maroon;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+    }
+    nav ul li{
+        display: flex;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .nav-link {
+        background-color: rgb(250,248,241);
+        color: maroon;
+    }
+    .nav-item {
+        background-color: rgb(250,248,241);
+        color: maroon;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-link.active {
+        background-color: beige;
+    }
+    a.nav-link {
+        color: maroon;
+    }
+    a.nav-link.active {
+        color: maroon;
+    }
+
+    #titulo {font-size: 40px;}
+    
+    #comentario {font-size: 18px;}
+
+    .Buscar {left: 10%;}
+
+    .ordenar {left: 65%;}
+
+    p.card-text {font-size: 10px;}
+
+    button.card-link {
+        width: 160px;
+        font-size: 15px;
+        height: 30px;
+    }
+
+    .card-img-top {
+        max-width: 90%;
+    }
+
+    .card-body {
+        height: 200px;
+    }
+    .col-md-4 {
+        height: 400px;
+    }
+
+    .list-group-item {
+        width: 50%;
+    }
+
+    .card.mb-3 {
+        height: 400px;
+    }
+    .col-md-8 {
+        height: 400px;
+    }
+    .boton.card-body2 {
+        height: 400px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){ 
+    .checkbtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 100;
+        margin: 15px;
+        background-color: black;
+    }
+    nav {
+        position: absolute;
+        background: aliceblue;
+        width: 100%;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(250,248,241);
+        color: maroon;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+    }
+    nav ul li{
+        display: flex;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .nav-link {
+        background-color: rgb(250,248,241);
+        color: maroon;
+    }
+    .nav-item {
+        background-color: rgb(250,248,241);
+        color: maroon;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-link.active {
+        background-color: beige;
+    }
+    a.nav-link {
+        color: maroon;
+    }
+    a.nav-link.active {
+        color: maroon;
+    }
+
+    #titulo {
+        /*50*/
+        font-size: 40px;
+    }
+    
+    #comentario {
+        /*23*/
+        font-size: 18px;
+    }
+    .Buscar {
+        left: 10%;
+    }
+    
+    .ordenar {
+        left: 65%;
+    }
+
+    .card-img-top {
+        max-width: 50%;
+    }
 }
